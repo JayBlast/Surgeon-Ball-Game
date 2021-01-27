@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public Rigidbody cutter;
-public Vector2 textureCoord;
+//public Rigidbody cutter;
+//public Vector2 textureCoord; //I configured these wrong and it might have thought of something better
 
 public class ScarPainter : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        cutter = GetComponent<Rigidbody>();//sets cutter to current gameplay value
+        //cutter = GetComponent<Rigidbody>();//sets cutter to current gameplay value
         //Renderer rend = GetComponent<Renderer>();
 
         // duplicate the original texture and assign to the material
@@ -46,7 +46,7 @@ public class ScarPainter : MonoBehaviour
         if(col.gameObject.name == "Platform")
         {
             //put draw statement here
-
+            return;
         }
     }
     void OnCollisionExit(Collision col)//determines what happens when two objects stop touching
