@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Movement
+    - hoverNew
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -46,19 +47,21 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11248}
+      Script: {instanceID: 11250}
     - Class: 114
-      Script: {instanceID: 11458}
+      Script: {instanceID: 11522}
     - Class: 114
-      Script: {instanceID: 11860}
+      Script: {instanceID: 12058}
     - Class: 114
-      Script: {instanceID: 12668}
+      Script: {instanceID: 12878}
     - Class: 114
-      Script: {instanceID: 12780}
+      Script: {instanceID: 13134}
     - Class: 114
-      Script: {instanceID: 13150}
+      Script: {instanceID: 13278}
     - Class: 114
-      Script: {instanceID: 13182}
+      Script: {instanceID: 13738}
+    - Class: 114
+      Script: {instanceID: 13786}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -521,4 +524,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/main scene.unity
-  playerPath: C:/Users/14697/SurgeonBallM/Temp/SurgeonBallM.exe
+  playerPath: D:/Github/Surgeon-Ball-Game/SurgeonBallM/SurgeonBallM.exe
