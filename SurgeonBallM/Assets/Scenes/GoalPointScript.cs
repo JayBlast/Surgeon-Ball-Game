@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class GoalPointScript : MonoBehaviour
 {
-    
+    [SerializeField] public LevelProgress myProg;
+    [SerializeField] public ScoreController myScore;
+
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            Destroy(gameObject);
-            //later add functionality that ends level when all of this object is destroyed
+            myProg.goalsCollected++;
+            Destroy(gameObject);            
+            myProg.UpdateProgress();
+
         }
     }
 }
