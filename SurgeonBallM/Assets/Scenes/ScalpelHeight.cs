@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScarOjectSpawner : MonoBehaviour
+public class ScalpelHeight : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
