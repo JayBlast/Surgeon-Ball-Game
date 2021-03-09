@@ -5,7 +5,6 @@ using UnityEngine;
 public class DamageZones : MonoBehaviour
 {
     //[SerializeField] private bool isDamaging = false;
-    //[SerializeField] public double damage = 0.0;
     [SerializeField] public DamageController myDamage;
     /*private void OnTriggerEnter(Collider other)
     {
