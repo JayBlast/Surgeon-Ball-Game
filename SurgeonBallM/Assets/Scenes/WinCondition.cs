@@ -18,7 +18,7 @@ public class WinCondition : MonoBehaviour
         {
             scoreFinal = myScore.score; //This is the score to be added into the leaderboard database
             accFinal = myAcc.currentAcc;
-
+            SceneManager.LoadScene("startScreen");
             //Jay make this next line work please
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);//ends level
         }
