@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GoalPointScript : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class GoalPointScript : MonoBehaviour
             myProg.goalsCollected++;
             Destroy(gameObject);            
             myProg.UpdateProgress();
+
 
         }
     }
