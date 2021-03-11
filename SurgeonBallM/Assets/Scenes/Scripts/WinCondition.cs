@@ -16,6 +16,7 @@ public class WinCondition : MonoBehaviour
     {
         if (myProg.goalsRemaining == 0)
         {
+            myProg.progText.text = "Winner!";
             scoreFinal = myScore.score; //This is the score to be added into the leaderboard database
             accFinal = myAcc.currentAcc;
             SceneManager.LoadScene("LeaderBoard");

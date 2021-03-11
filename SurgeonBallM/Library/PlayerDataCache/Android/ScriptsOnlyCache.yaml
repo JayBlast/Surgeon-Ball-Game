@@ -11,6 +11,7 @@ ScriptsOnlyBuild:
     - ScoreController
     - TiltControls
     - WinCondition
+    - leaderBoard
     - loadScene
     - startM
     Unity.Mobile.AndroidLogcat.Editor.dll:
@@ -29,8 +30,64 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.InputField
     - UnityEngine.UI.Text
   sceneClasses:
+    Assets/Scenes/LeaderBoard.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 14280}
+    - Class: 114
+      Script: {instanceID: 14470}
+    - Class: 114
+      Script: {instanceID: 14514}
+    - Class: 114
+      Script: {instanceID: 14974}
+    - Class: 114
+      Script: {instanceID: 15470}
+    - Class: 114
+      Script: {instanceID: 15676}
+    - Class: 114
+      Script: {instanceID: 16034}
+    - Class: 114
+      Script: {instanceID: 16250}
+    - Class: 114
+      Script: {instanceID: 16454}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 124
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/mainMenu.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -51,21 +108,21 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11646}
+      Script: {instanceID: 14280}
     - Class: 114
-      Script: {instanceID: 11838}
+      Script: {instanceID: 14470}
     - Class: 114
-      Script: {instanceID: 11882}
+      Script: {instanceID: 14514}
     - Class: 114
-      Script: {instanceID: 12346}
+      Script: {instanceID: 14974}
     - Class: 114
-      Script: {instanceID: 12496}
+      Script: {instanceID: 15120}
     - Class: 114
-      Script: {instanceID: 12852}
+      Script: {instanceID: 15470}
     - Class: 114
-      Script: {instanceID: 13434}
+      Script: {instanceID: 16034}
     - Class: 114
-      Script: {instanceID: 13858}
+      Script: {instanceID: 16454}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -114,35 +171,35 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11646}
+      Script: {instanceID: 14280}
     - Class: 114
-      Script: {instanceID: 11818}
+      Script: {instanceID: 14450}
     - Class: 114
-      Script: {instanceID: 11822}
+      Script: {instanceID: 14454}
     - Class: 114
-      Script: {instanceID: 11838}
+      Script: {instanceID: 14470}
     - Class: 114
-      Script: {instanceID: 12216}
+      Script: {instanceID: 14844}
     - Class: 114
-      Script: {instanceID: 12346}
+      Script: {instanceID: 14974}
     - Class: 114
-      Script: {instanceID: 12492}
+      Script: {instanceID: 15116}
     - Class: 114
-      Script: {instanceID: 12844}
+      Script: {instanceID: 15462}
     - Class: 114
-      Script: {instanceID: 12956}
+      Script: {instanceID: 15574}
     - Class: 114
-      Script: {instanceID: 12960}
+      Script: {instanceID: 15578}
     - Class: 114
-      Script: {instanceID: 13022}
+      Script: {instanceID: 15640}
     - Class: 114
-      Script: {instanceID: 13434}
+      Script: {instanceID: 16034}
     - Class: 114
-      Script: {instanceID: 13602}
+      Script: {instanceID: 16202}
     - Class: 114
-      Script: {instanceID: 13702}
+      Script: {instanceID: 16300}
     - Class: 114
-      Script: {instanceID: 13858}
+      Script: {instanceID: 16454}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -179,21 +236,21 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11646}
+      Script: {instanceID: 14280}
     - Class: 114
-      Script: {instanceID: 11838}
+      Script: {instanceID: 14470}
     - Class: 114
-      Script: {instanceID: 11882}
+      Script: {instanceID: 14514}
     - Class: 114
-      Script: {instanceID: 12346}
+      Script: {instanceID: 14974}
     - Class: 114
-      Script: {instanceID: 12852}
+      Script: {instanceID: 15470}
     - Class: 114
-      Script: {instanceID: 12938}
+      Script: {instanceID: 15556}
     - Class: 114
-      Script: {instanceID: 13434}
+      Script: {instanceID: 16034}
     - Class: 114
-      Script: {instanceID: 13858}
+      Script: {instanceID: 16454}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -780,4 +837,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/startScreen.unity
   - Assets/Scenes/mainMenu.unity
   - Assets/Scenes/main_scene.unity
+  - Assets/Scenes/LeaderBoard.unity
   playerPath: C:/Users/14697/SurgeonBallM/Test.apk

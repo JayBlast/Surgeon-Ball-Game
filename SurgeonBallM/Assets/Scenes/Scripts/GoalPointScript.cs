@@ -13,10 +13,8 @@ public class GoalPointScript : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             myProg.goalsCollected++;
-            Destroy(gameObject);            
             myProg.UpdateProgress();
-
-
+            Destroy(gameObject);            
         }
     }
 }

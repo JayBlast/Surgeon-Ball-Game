@@ -20,7 +20,7 @@ public class LevelProgress : MonoBehaviour
     {
         goalsRemaining = totalGoals - goalsCollected;
         progText.text = "Progress: [" + goalsCollected.ToString("0") + "/" + totalGoals.ToString("0") + "]"; //updates the text connected to this controller, as a float
-        
+  
     }
 
 }

@@ -2095,7 +2095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bb661ada9b2b70438db222c75f30e72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxAcc: 0
+  maxAcc: 100
   currentAcc: 0
   accText: {fileID: 378604940}
   myDamage: {fileID: 1031907361}
