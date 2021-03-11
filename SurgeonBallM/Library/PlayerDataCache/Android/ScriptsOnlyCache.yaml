@@ -5,6 +5,7 @@ ScriptsOnlyBuild:
     - DamageController
     - DamageZones
     - GoalPointScript
+    - GoalZones
     - LevelProgress
     - RespawnScript
     - ScoreController
@@ -15,6 +16,8 @@ ScriptsOnlyBuild:
     Unity.Mobile.AndroidLogcat.Editor.dll:
     - Unity.Android.Logcat.AndroidLogcatConsoleWindow
     - Unity.Android.Logcat.AndroidLogcatManager
+    Unity.Notifications.dll:
+    - Unity.Notifications.UnityNotificationEditorManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -28,7 +31,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
-    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/mainMenu.unity:
@@ -53,13 +55,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11248}
     - Class: 114
-      Script: {instanceID: 11420}
+      Script: {instanceID: 11422}
     - Class: 114
-      Script: {instanceID: 11460}
+      Script: {instanceID: 11462}
     - Class: 114
       Script: {instanceID: 11868}
     - Class: 114
-      Script: {instanceID: 12002}
+      Script: {instanceID: 12000}
     - Class: 114
       Script: {instanceID: 12294}
     - Class: 114
@@ -103,6 +105,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 96
@@ -116,19 +120,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11402}
     - Class: 114
-      Script: {instanceID: 11420}
+      Script: {instanceID: 11406}
     - Class: 114
-      Script: {instanceID: 11460}
+      Script: {instanceID: 11422}
     - Class: 114
-      Script: {instanceID: 11754}
+      Script: {instanceID: 11756}
     - Class: 114
       Script: {instanceID: 11868}
     - Class: 114
-      Script: {instanceID: 11992}
+      Script: {instanceID: 11996}
     - Class: 114
-      Script: {instanceID: 11998}
+      Script: {instanceID: 12286}
     - Class: 114
       Script: {instanceID: 12388}
+    - Class: 114
+      Script: {instanceID: 12392}
+    - Class: 114
+      Script: {instanceID: 12452}
     - Class: 114
       Script: {instanceID: 12804}
     - Class: 114
@@ -137,25 +145,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13040}
     - Class: 114
       Script: {instanceID: 13180}
-    - Class: 114
-      Script: {instanceID: 13212}
-    - Class: 114
-      Script: {instanceID: 14312}
-    - Class: 114
-      Script: {instanceID: 35034}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
-    - Class: 136
-      Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -185,9 +183,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11248}
     - Class: 114
-      Script: {instanceID: 11420}
+      Script: {instanceID: 11422}
     - Class: 114
-      Script: {instanceID: 11460}
+      Script: {instanceID: 11462}
     - Class: 114
       Script: {instanceID: 11868}
     - Class: 114
@@ -265,10 +263,16 @@ ScriptsOnlyBuild:
     className: ActivationTrack
   - hash:
       serializedVersion: 2
-      Hash: c4071fa0d8f98fb9b1eb57f46578bebb
+      Hash: dc6d9889a936ea7a3621f5ba53a7e414
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: DamageController
+    className: DamageZones
+  - hash:
+      serializedVersion: 2
+      Hash: b56601e185b71d0ed55346296aa0ab8f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScoreController
   - hash:
       serializedVersion: 2
       Hash: aeb62f729c52c814dec86c47dcac1471
@@ -391,18 +395,6 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ScarOjectSpawner
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ScarPainter
-  - hash:
-      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -443,12 +435,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DamageDisplayScript
-  - hash:
-      serializedVersion: 2
-      Hash: dc6d9889a936ea7a3621f5ba53a7e414
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DamageZones
   - hash:
       serializedVersion: 2
       Hash: b90a3e021df36f81b568072fdc4ff2bf
@@ -499,6 +485,12 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
+      Hash: d5bcead15a592fd9f77a1b9608a7d4a5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DamageController
+  - hash:
+      serializedVersion: 2
       Hash: 5f1752ed2092162f016c19510c28a8b9
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -523,10 +515,22 @@ ScriptsOnlyBuild:
     className: RespawnScript
   - hash:
       serializedVersion: 2
+      Hash: dc6d9889a936ea7a3621f5ba53a7e414
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GoalZones
+  - hash:
+      serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: VerticalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 1cef147116f36a9f3bdd3ababd782d7d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LevelProgress
   - hash:
       serializedVersion: 2
       Hash: 783f593b9380cf72d0f7ebfd4a0d4bcd
@@ -743,18 +747,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 1cef147116f36a9f3bdd3ababd782d7d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LevelProgress
-  - hash:
-      serializedVersion: 2
-      Hash: b56601e185b71d0ed55346296aa0ab8f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ScoreController
   platform: 13
   scenePathNames:
   - Assets/Scenes/startScreen.unity
