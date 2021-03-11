@@ -24,7 +24,8 @@ public class AccuracyCalculator : MonoBehaviour
     public void UpdateAcc()
     {
         currentAcc = maxAcc - myDamage.playerDamage;
-        accText.text = "Accuracy: [" + currentAcc.ToString("0.0") + "%]"; //updates the text connected to this controller, as a float
+        //accText.text = "Accuracy: [" + currentAcc.ToString("0.0") + "%]"; //updates the text connected to this controller, as a float
+        accText.text = "Accuracy: [" + currentAcc.ToString("0.0") + "%]";
         myScore.UpdateScore();
     }
 }

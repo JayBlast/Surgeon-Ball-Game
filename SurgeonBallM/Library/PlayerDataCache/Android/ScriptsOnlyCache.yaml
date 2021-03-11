@@ -16,8 +16,6 @@ ScriptsOnlyBuild:
     Unity.Mobile.AndroidLogcat.Editor.dll:
     - Unity.Android.Logcat.AndroidLogcatConsoleWindow
     - Unity.Android.Logcat.AndroidLogcatManager
-    Unity.Notifications.dll:
-    - Unity.Notifications.UnityNotificationEditorManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
