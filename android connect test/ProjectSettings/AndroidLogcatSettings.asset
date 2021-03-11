@@ -1,0 +1,119 @@
+{
+    "m_SelectedDeviceId": "RF8MA30F8NX",
+    "m_SelectedPackage": {
+        "deviceId": "RF8MA30F8NX",
+        "name": "com.DefaultCompany.androidconnecttest",
+        "processId": 357,
+        "exited": false
+    },
+    "m_SelectedPriority": 0,
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "RF8MA30F8NX",
+            "name": "com.DefaultCompany.androidconnecttest",
+            "processId": 12858,
+            "exited": false
+        },
+        {
+            "deviceId": "RF8MA30F8NX",
+            "name": "com.DefaultCompany.androidconnecttest",
+            "processId": 25105,
+            "exited": false
+        },
+        {
+            "deviceId": "RF8MA30F8NX",
+            "name": "com.DefaultCompany.androidconnecttest",
+            "processId": 8060,
+            "exited": false
+        },
+        {
+            "deviceId": "RF8MA30F8NX",
+            "name": "com.DefaultCompany.androidconnecttest",
+            "processId": 10104,
+            "exited": false
+        },
+        {
+            "deviceId": "RF8MA30F8NX",
+            "name": "com.DefaultCompany.androidconnecttest",
+            "processId": 17848,
+            "exited": false
+        },
+        {
+            "deviceId": "RF8MA30F8NX",
+            "name": "com.DefaultCompany.androidconnecttest",
+            "processId": 25212,
+            "exited": false
+        },
+        {
+            "deviceId": "RF8MA30F8NX",
+            "name": "com.DefaultCompany.androidconnecttest",
+            "processId": 26268,
+            "exited": false
+        },
+        {
+            "deviceId": "RF8MA30F8NX",
+            "name": "com.DefaultCompany.androidconnecttest",
+            "processId": 26900,
+            "exited": false
+        },
+        {
+            "deviceId": "RF8MA30F8NX",
+            "name": "com.DefaultCompany.androidconnecttest",
+            "processId": 357,
+            "exited": false
+        }
+    ],
+    "m_Tags": {
+        "m_Entries": [
+            {
+                "m_Name": "Filter by all listed tags",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "No Filter",
+                "m_Selected": true
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Tag Control...",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Unity",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "CRASH",
+                "m_Selected": false
+            }
+        ]
+    },
+    "m_MemoryViewerState": {
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
+        "MemoryGroup": 1,
+        "Behavior": 1
+    },
+    "m_Filter": "",
+    "m_FilterIsRegularExpression": false,
+    "m_SymbolPaths": []
+}
