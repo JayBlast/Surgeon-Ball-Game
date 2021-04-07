@@ -6,7 +6,9 @@ ScriptsOnlyBuild:
     - DamageZones
     - GoalPointScript
     - GoalZones
+    - LeadboardAutoScore
     - LevelProgress
+    - PassScore
     - RespawnScript
     - ScoreController
     - TiltControls
@@ -51,23 +53,25 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 14280}
+      Script: {instanceID: 11262}
     - Class: 114
-      Script: {instanceID: 14470}
+      Script: {instanceID: 11454}
     - Class: 114
-      Script: {instanceID: 14514}
+      Script: {instanceID: 11498}
     - Class: 114
-      Script: {instanceID: 14974}
+      Script: {instanceID: 11966}
     - Class: 114
-      Script: {instanceID: 15470}
+      Script: {instanceID: 12478}
     - Class: 114
-      Script: {instanceID: 15676}
+      Script: {instanceID: 12692}
     - Class: 114
-      Script: {instanceID: 16034}
+      Script: {instanceID: 13060}
     - Class: 114
-      Script: {instanceID: 16250}
+      Script: {instanceID: 13282}
     - Class: 114
-      Script: {instanceID: 16454}
+      Script: {instanceID: 13488}
+    - Class: 114
+      Script: {instanceID: 14990}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -108,21 +112,21 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 14280}
+      Script: {instanceID: 11262}
     - Class: 114
-      Script: {instanceID: 14470}
+      Script: {instanceID: 11454}
     - Class: 114
-      Script: {instanceID: 14514}
+      Script: {instanceID: 11498}
     - Class: 114
-      Script: {instanceID: 14974}
+      Script: {instanceID: 11966}
     - Class: 114
-      Script: {instanceID: 15120}
+      Script: {instanceID: 12118}
     - Class: 114
-      Script: {instanceID: 15470}
+      Script: {instanceID: 12478}
     - Class: 114
-      Script: {instanceID: 16034}
+      Script: {instanceID: 13060}
     - Class: 114
-      Script: {instanceID: 16454}
+      Script: {instanceID: 13488}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -171,35 +175,39 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 14280}
+      Script: {instanceID: 11262}
     - Class: 114
-      Script: {instanceID: 14450}
+      Script: {instanceID: 11434}
     - Class: 114
-      Script: {instanceID: 14454}
+      Script: {instanceID: 11438}
     - Class: 114
-      Script: {instanceID: 14470}
+      Script: {instanceID: 11454}
     - Class: 114
-      Script: {instanceID: 14844}
+      Script: {instanceID: 11498}
     - Class: 114
-      Script: {instanceID: 14974}
+      Script: {instanceID: 11834}
     - Class: 114
-      Script: {instanceID: 15116}
+      Script: {instanceID: 11966}
     - Class: 114
-      Script: {instanceID: 15462}
+      Script: {instanceID: 12114}
     - Class: 114
-      Script: {instanceID: 15574}
+      Script: {instanceID: 12384}
     - Class: 114
-      Script: {instanceID: 15578}
+      Script: {instanceID: 12470}
     - Class: 114
-      Script: {instanceID: 15640}
+      Script: {instanceID: 12582}
     - Class: 114
-      Script: {instanceID: 16034}
+      Script: {instanceID: 12586}
     - Class: 114
-      Script: {instanceID: 16202}
+      Script: {instanceID: 12648}
     - Class: 114
-      Script: {instanceID: 16300}
+      Script: {instanceID: 13060}
     - Class: 114
-      Script: {instanceID: 16454}
+      Script: {instanceID: 13230}
+    - Class: 114
+      Script: {instanceID: 13332}
+    - Class: 114
+      Script: {instanceID: 13488}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -236,21 +244,21 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 14280}
+      Script: {instanceID: 11262}
     - Class: 114
-      Script: {instanceID: 14470}
+      Script: {instanceID: 11454}
     - Class: 114
-      Script: {instanceID: 14514}
+      Script: {instanceID: 11498}
     - Class: 114
-      Script: {instanceID: 14974}
+      Script: {instanceID: 11966}
     - Class: 114
-      Script: {instanceID: 15470}
+      Script: {instanceID: 12478}
     - Class: 114
-      Script: {instanceID: 15556}
+      Script: {instanceID: 12564}
     - Class: 114
-      Script: {instanceID: 16034}
+      Script: {instanceID: 13060}
     - Class: 114
-      Script: {instanceID: 16454}
+      Script: {instanceID: 13488}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -504,7 +512,7 @@ ScriptsOnlyBuild:
     className: DamageDisplayScript
   - hash:
       serializedVersion: 2
-      Hash: b90a3e021df36f81b568072fdc4ff2bf
+      Hash: 9abef0d3b38eb8954be8a8e3b9759939
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WinCondition
@@ -544,6 +552,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: c48a4bd3434cf901b9ff20114bb9a73e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PassScore
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -832,6 +846,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LeadboardAutoScore
   platform: 13
   scenePathNames:
   - Assets/Scenes/startScreen.unity

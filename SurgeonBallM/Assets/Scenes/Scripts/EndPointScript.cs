@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//This script is no longer in use and will be removed from all dependencies when there is more time
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

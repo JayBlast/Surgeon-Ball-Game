@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//This script is for altering the height of the scalpel object in 3d space
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
