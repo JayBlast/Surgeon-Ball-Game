@@ -1,49 +1,26 @@
-﻿using System.Collections;
+﻿//Script for damage zone detection. Assigned to every object that is meant to apply damage to the character
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class DamageZones : MonoBehaviour
 {
-    
-    [SerializeField] public DamageController myDamage;
+    [SerializeField] public DamageController myDamage;//provides access to the functions and data of the data controller script
 
-    void Start()
+    private void OnTriggerStay(Collider other)//runs when this objects detects another object staying within it
     {
-        //Physics.IgnoreCollision(GetComponent<Collider>()  //second entry with something.GetComponent<Collider>())
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player"))//if the colliding object has the tag "Player"
         {
-            myDamage.isDamaging = false;//Turns off the damaging function on the AccuracyCalculator script
-            myDamage.UpdateDamage();
+            myDamage.isDamaging = true;//Turns off the damaging boolean on the damage controller script
+            myDamage.UpdateDamage();//triggers damage calculator to update
         }
     }
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerExit(Collider other)//runs when this objects detects that another object is leaving it
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player"))//if the colliding object has the tag "Player"
         {
-            myDamage.isDamaging = true;
-            //myDamage.playerDamage = myDamage.playerDamage + 0.1f;
-            myDamage.UpdateDamage();
+            myDamage.isDamaging = false;//Turns off the damaging boolean on the damage controller script
+            myDamage.UpdateDamage();//triggers damage calculator to update
         }
     }
-    /*
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.CompareTag("Player"))
-            myDamage.playerDamage = myDamage.playerDamage + 0.1f;
-            myDamage.UpdateDamage();
-    }*/
-    /*
-        void Update()
-        {
-            if (isDamaging)
-            {
-                myDamage.playerDamage = myDamage.playerDamage + 0.1f;
-                myDamage.UpdateDamage();
-            }
-            //Debug.Log(damage);// get this to work
-        }*/
 }

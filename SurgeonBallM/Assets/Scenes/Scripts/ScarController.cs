@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//This script is for calculating when the "scar" trail should be constructed
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
