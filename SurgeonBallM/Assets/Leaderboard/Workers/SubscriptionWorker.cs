@@ -373,7 +373,7 @@ namespace PubNubAPI
                 #endif
                 this.RunSubscribeRequest (timetoken, false);
             }
-        }
+       }
 
         SubscribeEnvelope ParseReceiedJSONV2 (string jsonString)
         {

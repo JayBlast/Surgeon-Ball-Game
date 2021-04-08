@@ -104,10 +104,11 @@ public class leaderBoard : MonoBehaviour {
 	void TaskOnClick()
 	{
 		var usernametext = FieldUsername.text;// this would be set somewhere else in the code
-		var scoretext = FieldScore.text;
+		var scoretext = WinCondition.scoreFinal;
 		MyClass myObject = new MyClass();
+        string finalScore = WinCondition.scoreFinal.ToString();
 		myObject.username = FieldUsername.text;
-		myObject.score = FieldScore.text;
+		myObject.score = finalScore;
 		string json = JsonUtility.ToJson(myObject);
 
 		pubnub.Publish()
