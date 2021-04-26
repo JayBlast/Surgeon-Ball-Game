@@ -28,23 +28,25 @@ public class leaderBoard : MonoBehaviour {
 	public Button SubmitButton;
 	public InputField FieldUsername;
 	public InputField FieldScore;
+	public Text LabelScore;
 	//public Object[] tiles = {}
 	// Use this for initialization
-	void Start () {
+	void Start()
+	{
 		Button btn = SubmitButton.GetComponent<Button>();
 		btn.onClick.AddListener(TaskOnClick);
 
 		// Use this for initialization
-		PNConfiguration pnConfiguration = new PNConfiguration ();
-        pnConfiguration.PublishKey = "pub-c-9c372ea1-1d39-47b0-8831-9831c321b1d9";
-        pnConfiguration.SubscribeKey = "sub-c-22814dc0-81f3-11eb-a540-2a2aff149455";
+		PNConfiguration pnConfiguration = new PNConfiguration();
+		pnConfiguration.PublishKey = "pub-c-9c372ea1-1d39-47b0-8831-9831c321b1d9";
+		pnConfiguration.SubscribeKey = "sub-c-22814dc0-81f3-11eb-a540-2a2aff149455";
 
 		pnConfiguration.LogVerbosity = PNLogVerbosity.BODY;
-		pnConfiguration.UUID = Random.Range (0f, 999999f).ToString ();
+		pnConfiguration.UUID = Random.Range(0f, 999999f).ToString();
 
 		pubnub = new PubNub(pnConfiguration);
-		Debug.Log (pnConfiguration.UUID);
-			
+		Debug.Log(pnConfiguration.UUID);
+
 
 		MyClass myFireObject = new MyClass();
 		myFireObject.test = "new user";
@@ -53,19 +55,24 @@ public class leaderBoard : MonoBehaviour {
 			.Channel("submit_score")
 			.Message(fireobject)
 			.Async((result, status) => {
-				if(status.Error){
-					Debug.Log (status.Error);
-					Debug.Log (status.ErrorData.Info);
-				} else {
-					Debug.Log (string.Format("Fire Timetoken: {0}", result.Timetoken));
+				if (status.Error)
+				{
+					Debug.Log(status.Error);
+					Debug.Log(status.ErrorData.Info);
+				}
+				else
+				{
+					Debug.Log(string.Format("Fire Timetoken: {0}", result.Timetoken));
 				}
 			});
-		
-		pubnub.SusbcribeCallback += (sender, e) => { 
+
+		pubnub.SusbcribeCallback += (sender, e) => {
 			SusbcribeEventEventArgs mea = e as SusbcribeEventEventArgs;
-			if (mea.Status != null) {
+			if (mea.Status != null)
+			{
 			}
-			if (mea.MessageResult != null) {
+			if (mea.MessageResult != null)
+			{
 				Dictionary<string, object> msg = mea.MessageResult.Payload as Dictionary<string, object>;
 
 				string[] strArr = msg["username"] as string[];
@@ -89,25 +96,54 @@ public class leaderBoard : MonoBehaviour {
 					Debug.Log(score);
 				}
 			}
-			if (mea.PresenceEventResult != null) {
+			if (mea.PresenceEventResult != null)
+			{
 				Debug.Log("In Example, SusbcribeCallback in presence" + mea.PresenceEventResult.Channel + mea.PresenceEventResult.Occupancy + mea.PresenceEventResult.Event);
 			}
 		};
-		pubnub.Subscribe ()
-			.Channels (new List<string> () {
+		pubnub.Subscribe()
+			.Channels(new List<string>() {
 				"leaderboard_scores"
 			})
 			.WithPresence()
 			.Execute();
 	}
 
+
 	void TaskOnClick()
 	{
 		var usernametext = FieldUsername.text;// this would be set somewhere else in the code
-		var scoretext = FieldScore.text; //replace this with the PassScore value
+		var scoretext = FieldScore.text;
 		MyClass myObject = new MyClass();
 		myObject.username = FieldUsername.text;
-		myObject.score = FieldScore.text; //Replace this with the PassScore value
+		myObject.score = FieldScore.text;
+		string json = JsonUtility.ToJson(myObject);
+
+		pubnub.Publish()
+			.Channel("submit_score")
+			.Message(json)
+			.Async((result, status) => {
+				if (!status.Error)
+				{
+					Debug.Log(string.Format("Publish Timetoken: {0}", result.Timetoken));
+				}
+				else
+				{
+					Debug.Log(status.Error);
+					Debug.Log(status.ErrorData.Info);
+				}
+			});
+		//Output this to console when the Button is clicked
+		Debug.Log("You have clicked the button!");
+	}
+	/*public void TaskOnClick()
+	{
+		var usernametext = FieldUsername.text;// this would be set somewhere else in the code
+		var scoretext = LabelScore.text; //replace this with the PassScore value
+		MyClass myObject = new MyClass();
+		myObject.username = FieldUsername.text;
+		//myObject.score = FieldScore.text; //Replace this with the PassScore value
+		myObject.score = LabelScore.text;
 		string json = JsonUtility.ToJson(myObject);
 
 		pubnub.Publish()
@@ -123,6 +159,6 @@ public class leaderBoard : MonoBehaviour {
 			});
 		//Output this to console when the Button is clicked
 		Debug.Log("You have clicked the button!");
-	}
+	}*/
 
 }

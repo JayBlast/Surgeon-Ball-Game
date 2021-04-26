@@ -21,7 +21,7 @@ public class DamageController : MonoBehaviour
     {
        if (isDamaging == true)//only occurs if data works
        {
-            playerDamage = playerDamage + 0.1f;//slowly increments the damage
+            playerDamage = playerDamage + 0.01f;//slowly increments the damage
        }
         checkDamage.text = isDamaging.ToString();//updates the UI to show whether or not the player should be taking damage.
         damageText.text = "Damage: [" + playerDamage.ToString("0.0") + "]";//updates the text connected to this controller, as a float
