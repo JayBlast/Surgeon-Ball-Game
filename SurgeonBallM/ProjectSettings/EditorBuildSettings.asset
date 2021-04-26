@@ -17,4 +17,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LeaderBoard.unity
     guid: 67573b4c3740241d395f6dff50ef191c
+  - enabled: 1
+    path: Assets/Scenes/firstLevel.unity
+    guid: f3ff91c6e0473454fb6f0eead4f15930
+  - enabled: 1
+    path: Assets/Scenes/secondLevel.unity
+    guid: 36fae5c38405c134eb23b6760b66f9cc
+  - enabled: 1
+    path: Assets/Scenes/thirdLevel.unity
+    guid: 6f1bc5651105b66488f22155f6769bc0
+  - enabled: 1
+    path: Assets/Scenes/fourthLevel.unity
+    guid: 43af5f7b1341d604f8b0648f8627bda8
   m_configObjects: {}
