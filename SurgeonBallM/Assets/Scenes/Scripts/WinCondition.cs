@@ -22,7 +22,7 @@ public class WinCondition : MonoBehaviour
             accFinal = myAcc.currentAcc;//(This value is calculated but is currently not in use)
             ScorePasserScript.instance.updatePasser(scoreFinal);//Calls the function within the static instance of ScorePasserScript, passing a number into it
             myProg.progText.text = "Passer Udpated";
-            SceneManager.LoadScene("LeaderBoard");//this triggers a transition to the Leaderboard scene
+            //SceneManager.LoadScene("LeaderBoard");//this triggers a transition to the Leaderboard scene
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);//alternate function to change the scene
             myProg.progText.text = "Next scene";
         }

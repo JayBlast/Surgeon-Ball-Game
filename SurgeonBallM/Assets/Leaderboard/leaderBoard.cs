@@ -27,7 +27,7 @@ public class leaderBoard : MonoBehaviour {
 
 	public Button SubmitButton;
 	public InputField FieldUsername;
-	public InputField FieldScore;
+	//public InputField FieldScore;
 	public Text LabelScore;
 	//public Object[] tiles = {}
 	// Use this for initialization
@@ -109,7 +109,7 @@ public class leaderBoard : MonoBehaviour {
 			.Execute();
 	}
 
-
+/*
 	void TaskOnClick()
 	{
 		var usernametext = FieldUsername.text;// this would be set somewhere else in the code
@@ -135,8 +135,8 @@ public class leaderBoard : MonoBehaviour {
 			});
 		//Output this to console when the Button is clicked
 		Debug.Log("You have clicked the button!");
-	}
-	/*public void TaskOnClick()
+	}*/
+	void TaskOnClick()
 	{
 		var usernametext = FieldUsername.text;// this would be set somewhere else in the code
 		var scoretext = LabelScore.text; //replace this with the PassScore value
@@ -159,6 +159,6 @@ public class leaderBoard : MonoBehaviour {
 			});
 		//Output this to console when the Button is clicked
 		Debug.Log("You have clicked the button!");
-	}*/
+	}
 
 }

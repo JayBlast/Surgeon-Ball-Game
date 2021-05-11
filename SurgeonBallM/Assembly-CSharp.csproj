@@ -125,6 +125,9 @@
      <Compile Include="Assets\Leaderboard\Interface\IPubNubNoChannelsBuilder.cs" />
      <Compile Include="Assets\Leaderboard\Interface\IPubNubNonSubscribeBuilder.cs" />
      <Compile Include="Assets\Leaderboard\Interface\IPubNubSubcribeBuilder.cs" />
+     <Compile Include="Assets\Leaderboard\LeaderBoard2script.cs" />
+     <Compile Include="Assets\Leaderboard\LeaderBoard3script.cs" />
+     <Compile Include="Assets\Leaderboard\LeaderBoard4script.cs" />
      <Compile Include="Assets\Leaderboard\Logger\PNLoggingMethod.cs" />
      <Compile Include="Assets\Leaderboard\Managers\PNLatencyManager.cs" />
      <Compile Include="Assets\Leaderboard\Managers\QueueManager.cs" />
@@ -187,6 +190,7 @@
      <Compile Include="Assets\Scenes\Scripts\GoalZones.cs" />
      <Compile Include="Assets\Scenes\Scripts\LeadboardAutoScore.cs" />
      <Compile Include="Assets\Scenes\Scripts\LevelProgress.cs" />
+     <Compile Include="Assets\Scenes\Scripts\MusicController.cs" />
      <Compile Include="Assets\Scenes\Scripts\RespawnScript.cs" />
      <Compile Include="Assets\Scenes\Scripts\ScalpelGeneral.cs" />
      <Compile Include="Assets\Scenes\Scripts\ScalpelHeight.cs" />
